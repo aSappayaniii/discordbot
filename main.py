@@ -1,5 +1,4 @@
 import nextcord
-import config
 import os
 from nextcord.ext import commands
 
