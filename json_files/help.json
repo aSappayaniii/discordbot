@@ -1,0 +1,20 @@
+{
+    "General Commands" : {
+        "help" : "showcases all of Panda's commands.",
+        "about" : "gives you information about Panda.",
+        "ping" : "gives you Panda's current latency.",
+        "dog" : "gives you a random dog image.",
+        "cat" : "gives you a random cat image.",
+        "userinfo" : "gives you information about a user.",
+        "serverinfo" : "gives you information about the server."
+    },
+    "Moderation Commands (only accessible by admins)" : {
+        "kick" : "kicks a user from the server.",
+        "ban" : "bans a user from the server.",
+        "unban" : "unbans a banned player from the server.",
+        "lock" : "locks the current channel.",
+        "unlock" : "unlocks the current channel."
+    }
+
+
+}
