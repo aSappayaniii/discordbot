@@ -16,8 +16,8 @@ class moderationCmds(commands.Cog):
 
         if channel:
             embed = nextcord.Embed(
-                title="Ewwwww...",
-                description=f"You don't belong in {guild.name}, leave now {member.mention}",
+                title="Welcome!",
+                description=f"I'm glad you're in this wonderful server {guild.name}, enjoy your stay {member.mention}.", #This message can be edited to what you'd like
                 color=nextcord.Color.green()
             )
             embed.set_thumbnail(url=member.avatar.url)
@@ -33,8 +33,8 @@ class moderationCmds(commands.Cog):
 
         if channel:
             embed = nextcord.Embed(
-                title="LETS GOOO!!!",
-                description=f"You never belonged here {member.mention}, the town wasn't big enough for the two of us boy.",
+                title="Darn.",
+                description=f"I'm sad to see you go {member.mention}, we'll see you later.", #This message can be edited to what you'd like
                 color=nextcord.Color.red()
             )
             embed.set_thumbnail(url=member.avatar.url)
