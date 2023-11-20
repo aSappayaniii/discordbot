@@ -7,7 +7,7 @@ class moderationCmds(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    # Joining
+    # User joins a server 
     @commands.Cog.listener() 
     async def on_member_join(self, member):
         guild = member.guild
@@ -21,11 +21,10 @@ class moderationCmds(commands.Cog):
                 color=nextcord.Color.green()
             )
             embed.set_thumbnail(url=member.avatar.url)
-            #embed.add_field(name="Information", value="Please consider to read the latest information!", inline=False)
 
             await channel.send(embed=embed)
 
-    #Leaving
+    # User leaves a server
     @commands.Cog.listener()
     async def on_member_remove(self, member):
         guild = member.guild
@@ -39,7 +38,6 @@ class moderationCmds(commands.Cog):
                 color=nextcord.Color.red()
             )
             embed.set_thumbnail(url=member.avatar.url)
-            #embed.add_field(name="Information", value="Please consider to read the latest information!", inline=False)
 
             await channel.send(embed=embed)
 

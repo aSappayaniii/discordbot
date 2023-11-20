@@ -14,9 +14,9 @@ async def on_ready():
     print(f'Logged in as {bot.user.name} ({bot.user.id})')
     print('_______________________________________________')
 
-#Load Cogs
+#Loads any cogs
 for filename in os.listdir('./cogs'):
     if filename.endswith(".py"):
         bot.load_extension(f'cogs.{filename[:-3]}')
-         
-bot.run(os.environ["DISCORD_TOKEN"])
+
+bot.run(os.environ["DISCORD_TOKEN"]) # Insert your bot's token here

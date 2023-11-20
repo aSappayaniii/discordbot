@@ -53,13 +53,13 @@ class generalCmds(commands.Cog):
 
     #Information about the bot
 
-    @nextcord.slash_command(description="Gives you information about Panda") 
+    @nextcord.slash_command(description="Gives you information about YOURBOTNAME") 
     async def about(self, ctx):
         await ctx.send("I went to Mexico and sat on a cactus.")
 
     #Bot's Current Latency
 
-    @nextcord.slash_command(description = "Shows the current latency of Panda") 
+    @nextcord.slash_command(description = "Shows the current latency of YOURBOTNAME") 
     async def ping(self, ctx):
         latency = self.bot.latency * 1000
 

@@ -15,6 +15,4 @@
         "lock" : "locks the current channel.",
         "unlock" : "unlocks the current channel."
     }
-
-
 }
