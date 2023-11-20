@@ -100,7 +100,21 @@ class moderationCmds(commands.Cog):
         await channel.set_permissions(ctx.guild.default_role, send_messages=True)
         await ctx.send("This channel has been unlocked.")
 
+    # Clearing most recent messages
+    @nextcord.slash_command(description="Remove a large amount of messages.",default_member_permissions=8)
+    async def clear(self, ctx):
 
+        channel = ctx.channel
+        deleted = await channel.purge(limit=100) #Limit dictates the amount of messages that are deleted, change to your liking.
+        await ctx.send("This channel's recent messages have been cleared.")
+
+    # Nuke, deleting ALL messages within a channel
+    @nextcord.slash_command(description="Nuke the channel.", default_member_permissions=8)
+    async def nuke(self, ctx):
+
+        channel = ctx.channel
+        deleted = await channel.purge(limit=9999)
+        await ctx.send("THIS CHANNEL HAS BEEN NUKED.")
 
 def setup(bot):
     bot.add_cog(moderationCmds(bot))
